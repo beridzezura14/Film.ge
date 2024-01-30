@@ -187,7 +187,12 @@
     .ganre{
         display: none;
     }
-
+    .login{
+        height: 75vh !important;
+    }
+    .checkbox-line {
+        margin: 10px 0;
+    }
     .footer-line{
         display: flex;
         justify-content: space-between;
@@ -209,5 +214,7 @@
     .filterable-cards{
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
+
 
 }
