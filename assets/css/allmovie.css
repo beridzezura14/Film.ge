@@ -1,0 +1,43 @@
+.filter-button{
+    width: 95%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-button button{
+    padding: 7px 20px;
+    border: none;
+    background-color: #3b3b3b;
+    color: orange;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.filter-button button.active{
+    background-color: orange;
+    color: black;
+    font-weight: bolder;
+}
+.filterable-cards{
+    width: 95%;
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+.hide{
+    display: none;
+}
+.card{
+    position: relative;
+}
+.card-img{
+    width: 100%;
+}
+.card:hover .m-name{
+    color: orange;
+}

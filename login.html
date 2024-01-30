@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/bg/clapperboard.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+
+    <!-- swiper css js -->
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="assets/js/swiper-bundle.min.js" defer></script> -->
+    <!-- -------- -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="logo" href="index.html"><ion-icon name="film-outline"></ion-icon></a>
+            <div class="icon">
+                <a href="index.html">
+                    <img class="head-icon" src="assets/img/icon/home.svg" alt="">
+                    <p class="active">მთავარი</p>
+                </a>
+                <a href="allmovies.html">
+                    <img class="head-icon" src="assets/img/icon/five.svg" alt="">
+                    <p>ფილმები</p>
+                </a>
+                <a href="#">
+                    <img class="head-icon" src="assets/img/icon/four.svg" alt="">
+                    <p>სერიალები</p>
+                </a>
+                <a href="#">
+                    <img class="head-icon" src="assets/img/icon/three.svg" alt="">
+                    <p>ანიმე</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="mobile-navbar">
+            <div class="mobile-logo">
+                <a class="logo-mobile" href="index.html"><ion-icon name="film-outline"></ion-icon></a>
+            </div>
+            <div class="mobile-icon">
+                <ion-icon class="open" name="list-outline"></ion-icon>
+                <ion-icon class="close" name="close-outline"></ion-icon>
+            </div>
+        </section>
+        <section class="pre-head">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <a href="index.html">
+                <div class="profile">
+                    <p></p>
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+            </a>
+        </section>
+        <section class="login">
+            <form class="login-form">
+                <p class="incorrect-text-label"></p>
+                <input class="text" type="text" name="text" id="text" placeholder="Enter Name">
+
+                <p class="incorrect-email-label"></p>
+                <input class="email" type="text" name="email" id="email" placeholder="Enter Email">
+
+                <div class="password-first">
+                    <p class="incorrect-password-label"></p>
+                    <ion-icon class="showpassword" name="eye-outline"></ion-icon>
+                    <ion-icon class="hidepassword" name="eye-off-outline"></ion-icon>
+                    <input class="pass-one" type="password" name="pass" id="passone" placeholder="Enter Password">                    
+                </div>
+
+                <div class="password-first">
+                    <p class="incorrect-password-label-Two"></p>
+                    <ion-icon class="showpasswordtwo" name="eye-outline"></ion-icon>
+                    <ion-icon class="hidepasswordtwo" name="eye-off-outline"></ion-icon>
+                    <input class="pass-two" type="password" name="pass" id="passtwo" placeholder="Enter Password">
+                </div>
+                <div class="checkbox-line">
+                    <input type="checkbox" name="checkbox" id="checkbox" required> 
+                    <label for="checkbox">ვეთანხმები</label>
+                    <p id="agree"></p>
+                </div>
+                <button id="submit" type="submit">რეგისტრაცია</button>
+            </form>
+            <div class="done">
+                <img src="assets/img/icon/done.png" alt="done">
+                <a href="login.html">DONE!</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"> 
+        <div class="footer-line"> 
+            <div>
+                <p>Copyright ©2024 All rights reserved | This template is made by <span style="color: orange;">UseR-14</span</p>    
+            </div>
+            <div>
+                <img src="assets/img/icon/svg+18 content.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/bg/clapperboard.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper css js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <!-- -------- -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="logo" href="index.html"><ion-icon name="film-outline"></ion-icon></a>
+            <div class="icon">
+                <a href="#">
+                    <img class="head-icon" src="assets/img/icon/home.svg" alt="">
+                    <p class="active">მთავარი</p>
+                </a>
+                <a href="allmovies.html">
+                    <img class="head-icon" src="assets/img/icon/five.svg" alt="">
+                    <p>ფილმები</p>
+                </a>
+                <a href="#">
+                    <img class="head-icon" src="assets/img/icon/four.svg" alt="">
+                    <p>სერიალები</p>
+                </a>
+                <a href="#">
+                    <img class="head-icon" src="assets/img/icon/three.svg" alt="">
+                    <p>ანიმე</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="mobile-navbar">
+            <div class="mobile-logo">
+                <a class="logo-mobile" href="index.html"><ion-icon name="film-outline"></ion-icon></a>
+            </div>
+            <div class="mobile-icon">
+                <ion-icon class="open" name="list-outline"></ion-icon>
+                <ion-icon class="close" name="close-outline"></ion-icon>
+            </div>
+        </section>
+        <section class="pre-head">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <a href="login.html">
+                <div class="profile">
+                    <p></p>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+            </a>
+        </section>
+        <section class="day-movie">
+            <div class="part-one">
+                <h1>დღის ფილმი</h1>
+                <a class="watch-movie" href="movie.html">ფილმის ყურება
+                    <ion-icon name="play-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="part-two">
+                <h2>ვინ ვარ მე <span class="slash">/</span> Who Am I</h2>
+                <p class="movie-describe">ბენჯამინი ახალგაზრდა ნიჭიერი ჰაკერია. მას მიიწვევენ საიდუმლო ჯგუფში, რომელიც გეგმავს ჰაკერულ შეტევებს სხვადასხვა მსხვილ ორგანიზაციაზე...Z</p>
+                <div class="movie-details-bottom">
+                    <div class="movie-details">
+                        <div class="ganre">
+                            <p style="color: orange;">ჟანრი:</p>
+                            <p>თრილერი,</p>
+                            <p>სათავგადასავლო,</p>
+                            <p>სამეცნიერო</p>
+                        </div>
+                        <div>
+                            <img width="50px" src="assets/img/icon/imdb.png" alt="imdb">
+                            <p><b>7.5</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="movies swiper mySwiper">
+            <div class="head-section">
+                <h4>ფილმები</h4>
+                <img src="assets/img/icon/five.svg" alt="">
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide movie-card">
+                <a href="https://mekobre.com/">
+                    <img src="assets/img/image (13).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (14).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (15).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (16).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (17).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (18).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (19).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (20).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (21).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+            </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination dots"></div>
+        </section>
+        <section class="movies swiper mySwiper">
+            <div class="head-section">
+                <h4>სერიალები</h4>
+                <img src="assets/img/icon/four.svg" alt="">
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (3).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (7).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (5).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (6).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (7).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (8).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (9).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (10).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/image (1).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+            </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination dots"></div>
+        </section>
+        <section class="movies anime swiper mySwiper">
+            <div class="head-section">
+                <h4>ანიმე</h4>
+                <img src="assets/img/icon/five.svg" alt="">
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide movie-card">
+                    <a href="#">
+                        <img src="assets/img/anime/1620743630_naruto-poster.webp" alt="">
+                        <p class="year">2010 წ</p>
+                        <p class="lang">GEO</p>
+                        <div class="imdb">
+                            <img src="assets/img/icon/imdb.png" alt="">
+                            <p>7.0</p>
+                        </div>
+                        <h5 class="m-name">ფილმის სახელი</h5>
+                        <h6 class="m-name-eng">Movie name</h6>
+                        </a>
+                  </div>
+                <div class="swiper-slide movie-card">
+                    <a href="#">
+                        <img src="assets/img/anime/1636547474_naruto-lost-story.jpg " alt="">
+                        <p class="year">2010 წ</p>
+                        <p class="lang">GEO</p>
+                        <div class="imdb">
+                            <img src="assets/img/icon/imdb.png" alt="">
+                            <p>7.0</p>
+                        </div>
+                        <h5 class="m-name">ფილმის სახელი</h5>
+                        <h6 class="m-name-eng">Movie name</h6>
+                        </a>
+                  </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (9).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (8).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (7).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (6).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (5).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (4).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (3).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (1).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (2).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination dots"></div>
+        </section>
+        <section class="ad">
+            <a href="https://www.facebook.com/nika11keshelava/">Goal Orientred Academy</a>
+        </section>
+        <section class="movies children swiper mySwiper">
+            <div class="head-section">
+                <h4>საბავშვო</h4>
+                <img src="assets/img/icon/five.svg" alt="">
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide movie-card">
+                    <a href="#">
+                        <img src="assets/img/anime/1636547474_naruto-lost-story.jpg" alt="">
+                        <p class="year">2010 წ</p>
+                        <p class="lang">GEO</p>
+                        <div class="imdb">
+                            <img src="assets/img/icon/imdb.png" alt="">
+                            <p>7.0</p>
+                        </div>
+
+                        <h5 class="m-name">ფილმის სახელი</h5>
+                        <h6 class="m-name-eng">Movie name</h6>
+                        </a>
+                  </div>
+                <div class="swiper-slide movie-card">
+                    <a href="#">
+                        <img src="assets/img/anime/1620743630_naruto-poster.webp" alt="">
+                        <p class="year">2010 წ</p>
+                        <p class="lang">GEO</p>
+                        <div class="imdb">
+                            <img src="assets/img/icon/imdb.png" alt="">
+                            <p>7.0</p>
+                        </div>
+                        <h5 class="m-name">ფილმის სახელი</h5>
+                        <h6 class="m-name-eng">Movie name</h6>
+                        </a>
+                  </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (5).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (7).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (9).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (1).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (3).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (4).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (3).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (1).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              <div class="swiper-slide movie-card">
+                <a href="#">
+                    <img src="assets/img/anime/anume (2).jpg" alt="">
+                    <p class="year">2010 წ</p>
+                    <p class="lang">GEO</p>
+                    <div class="imdb">
+                        <img src="assets/img/icon/imdb.png" alt="">
+                        <p>7.0</p>
+                    </div>
+                    <h5 class="m-name">ფილმის სახელი</h5>
+                    <h6 class="m-name-eng">Movie name</h6>
+                    </a>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination dots"></div>
+        </section>
+        <section class="movies trailer swiper mySwiper">
+            <div class="head-section">
+                <h4>თრეილერები</h4>
+                <img src="assets/img/icon/five.svg" alt="">
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide movie-card">
+                  <a href="https://mekobre.com/">
+                      <img src="assets/img/image (13).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (14).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (15).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (16).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (17).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (18).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (19).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (20).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+                <div class="swiper-slide movie-card">
+                  <a href="#">
+                      <img src="assets/img/image (21).jpg" alt="">
+                      <p class="year">2010 წ</p>
+                      <p class="lang">GEO</p>
+                      <div class="imdb">
+                          <img src="assets/img/icon/imdb.png" alt="">
+                          <p>7.0</p>
+                      </div>
+                      <h5 class="m-name">ფილმის სახელი</h5>
+                      <h6 class="m-name-eng">Movie name</h6>
+                      </a>
+                </div>
+              </div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination dots"></div>
+        </section>
+    </main>
+    <footer class="footer"> 
+        <div class="footer-line"> 
+            <div>
+                <p>Copyright ©2024 All rights reserved | This template is made by <span style="color: orange;">UseR-14</span</p>    
+            </div>
+            <div>
+                <img src="assets/img/icon/svg+18 content.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

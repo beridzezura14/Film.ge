@@ -1,0 +1,79 @@
+.bg-movie{
+    height: 150px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    background: linear-gradient(#000000a9, #000000), url(../img/bg/bg-image\ 2.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.play-movie{
+    width: 95%;
+    margin: auto;
+    background: linear-gradient(#000000d8, #000000d8), url(../img/bg/bg-image\ 2.jpg) center no-repeat;
+    background-size: cover;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.video{
+    height: 550px;
+}
+.movie-img-about-trailer{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    margin-top: 2rem;
+
+}
+.item1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.movie-imdb{
+    display: flex;
+    align-items: center;
+}
+.item1 a{
+    background-color: orange;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+.item2{
+    background-color: #070707;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.movie-imdb img{
+    margin-right: 10px;
+}
+.item2 h3{
+    margin-top: 10px;
+}
+.item2-paragraph{
+    margin-top: 30px;
+    width: 70%;
+}
+.movie-year{
+    margin-top: 15px;
+}
+.movie-ganre, .movie-artist{
+    margin-top: 15px;
+    display: flex;
+}
+.movie-ganre p, .movie-artist p{
+    margin-right: 10px;
+}
+

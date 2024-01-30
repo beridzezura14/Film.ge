@@ -1,0 +1,107 @@
+.login{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    background: linear-gradient(#0000007e, #000000a0), url(../img/bg/bg-login.jpg) center no-repeat;
+    background-size: cover;
+}
+.login-form{
+    width: 400px;
+    margin: auto;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.login-form input{
+    height: 40px;
+    padding: 5px 20px;
+    outline: none;
+    background-color: black;
+    border: none;
+    color: orange;
+    font-size: 17px;
+    border: 1px solid rgba(255, 166, 0, 0.269);
+}
+.checkbox-line {
+    display: flex;
+    align-items: center;
+}
+.checkbox-line label{
+    margin-left: 10px;
+}
+.password-first input{
+    width: 100%;
+}
+
+.password-first{
+    position: relative;
+}
+.showpassword, .hidepassword, 
+.showpasswordtwo, .hidepasswordtwo{
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+}
+.hidepasswordtwo,
+.hidepassword{
+    display: none;
+}
+.login-form button{
+    padding: 10px 5px 5px 5px;
+    font-size: 17px;
+    background-color: orange;
+    color: black;
+    border: none;
+    font-family: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+.login-form button:hover{
+    background-color: black;
+    color: orange;
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.done img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.done a{
+    color: black;
+    font-weight: bolder;
+    padding: 8px 40px;
+    background-color: orange;
+}
+
+/* ---- js style ------ */
+.incorrect-text-label, 
+.incorrect-email-label, 
+.incorrect-password-label,
+.incorrect-password-label-Two{
+    color: rgb(255, 130, 130);
+    margin-top: 10px;
+}
+
+
+.incorrect{
+    color: red;
+    margin-left: 10px;
+}
+
+/* .textbox, .emailbox, .passonebox, .passtwobox{
+    border: 2px solid red;
+} */

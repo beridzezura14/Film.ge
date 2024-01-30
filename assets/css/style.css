@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: normal;
+}
+
+@font-face {
+	font-family: normal;
+	src:url(../fonts/bpg_glaho_sylfaen.ttf);
+}
+@font-face {
+	font-family: bold;
+	src:url(../fonts/bpg_nino_mtavruli_bold.ttf);
+}
+.main{
+    margin-left: 90px;
+}
+
+.close{
+    display: none;
+    font-size: 40px;
+}
+header{
+    max-width: 90px;
+    border-right: 1px solid rgba(255, 166, 0, 0.103);
+    padding: 5px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+}
+.mobile-navbar{
+    display: none;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    color: white;
+    position: absolute;
+    top: 20px;
+    font-size: 25px;
+    padding: 15px 15px 9px 15px;
+    background-color: orange;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bolder;
+    transition: .9s;
+}
+.logo:hover{
+    transform: rotate(-10deg)
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+.icon a{
+    display: flex;
+    left: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    color: white;
+    margin-bottom: 30px;
+    transition: .6s ease;
+    font-size: 14px;
+    font-family: bold;
+}
+.icon a:hover{
+    color: orange;
+}
+.head-icon{
+    width: 30px;
+    transition: 0.6s;
+    margin-bottom: 5px;
+}
+.icon a:hover .head-icon{
+    transform: rotate(-15deg)
+}
+
+/* -------------------------- pre head search bar and profile */
+.open,.close{
+    color: white;
+}
+.pre-head{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.search-bar{
+    position: relative;
+}
+.search-bar input{
+    border: none;
+    height: 35px;
+    width: 400px;
+    background-color: #ffffff50;
+    padding: 3px 20px;
+    color: white;
+    outline: none;
+    font-size: 17px;
+    color: orange0;
+}
+.search-bar ion-icon{
+    position: absolute;
+    font-size: 20px;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile p{
+    font-size: 17px;
+    color: #fff;
+}
+.profile ion-icon{
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: #ffffff50;
+    padding: 12px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .9s;
+    color: #fff;
+}
+.profile ion-icon:hover{
+    color: orange;
+}
+
+/* -------------------------   day movie */
+.day-movie{
+    height: 320px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    background: linear-gradient(#000000a9, #000000), url(../img/bg/bg-image\ 2.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.part-one, .part-two{
+    width: 50%;
+    margin: 20px;
+    position: relative; 
+}
+.part-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.watch-movie{
+    color: white;
+    border: 2px solid orange;
+    padding: 7px 7px 10px 7px;
+    width: 180px;
+    transition: .9s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch-movie ion-icon{
+    color: white;
+    margin-left: 10px;
+}
+.watch-movie:hover{
+    color: orange;
+}
+.part-one h1{
+    font-size: 25px;
+    font-family: bold;
+}
+.part-two h2{
+    font-size: 40px;
+    font-family: bold;
+}
+.slash{
+    color: orange;
+}
+.movie-describe{
+    width: 80%;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 13px;
+    color: #d6d6d6;
+}
+.movie-details-bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.movie-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ganre{
+    display: flex;
+    align-items: center;   
+}
+.ganre p{
+    margin: 0 5px;
+    font-size: 14px;
+    color: #d6d6d6;
+    font-family: bold;
+}
+.movie-details div:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.movie-details div:last-child p{
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ------------------   start movies section */
+
+
+.movies{
+    max-width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+.head-section{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid orange;
+    padding: 1rem 0;
+}
+.head-section h4{
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: bold;
+}
+.head-section img{
+    width: 20px;
+    margin-top: -8px;
+}
+
+.movies-row{
+    margin: 2rem 0;
+}
+
+.movies-row{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr))
+}
+.movies-row-slide{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(8, 1fr)
+}
+.swiper-wrapper{
+    margin-top: 1.5rem;
+}
+/* -- movie style -- */
+.movie-card{
+    position: relative;
+    width: 100%;
+    transition: .9s;
+    /* overflow: hidden;  */
+}
+.movie-card img{
+    width: 100%;
+}
+.year, .lang{
+    position: absolute;
+    padding: 2px 10px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+.year{
+    top: 5px;
+    left: 5px;
+}
+.lang{
+    top: 5px;
+    right: 5px;
+}
+.imdb img{
+    width: 50px;
+    margin-right: 5px;
+}
+.imdb{
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 5px;
+}
+.imdb p{
+    font-weight: bolder;
+    text-shadow: 0 0 50px black;
+    color: white;
+    background-color: #000000;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.m-name{
+    font-size: 20px;
+    color: white;
+    transition: .9s;    
+}
+.m-name-eng{
+    font-size: 18px;
+    margin-top: 5px;
+    color: white;
+    transition: .9s
+}
+.movie-card:hover .m-name{
+    color: orange;
+}
+
+
+.box-box{
+    height: 400px !important;
+    background-color: rgb(0, 136, 61);
+}
+
+.next, .prev{
+    color: orange !important;
+    font-weight: bolder;
+}
+
+.dots{
+    display: none;
+}
+
+/* ----------------------------- start section anime */
+
+.anime{
+    background: linear-gradient(rgba(0, 0, 0, 0.495), rgba(0, 0, 0, 0.628)), url(../img/bg/narutooo.jpeg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 20px !important;
+}
+
+/* ------------------------------------- ad section */
+.ad{
+    width: 95%;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.495), rgba(0, 0, 0, 0.628)), url(../img/bg/bg-goa.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.ad a{
+    color: greenyellow;
+    text-shadow: 0 0 3px greenyellow;
+    font-size: 25px;
+    transition: .5s;
+}
+.ad a:hover{
+    color: #fff;
+}
+
+/* ------------------------------------- footer */
+.footer{
+    margin-left: 90px !important;
+    margin-top: 2rem;
+    background-color: #242424;
+    padding: 10px 30px;
+}
+.footer-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-line p{
+    color: #919191;
+}
+
+
+
+
+.scroll-top-icon{
+    font-size: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: orange; 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #de4947; 
+  } */
+
